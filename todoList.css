@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(todo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar {
+  background-color: whitesmoke;
+  width: 60%;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+#input-text {
+  flex: 10;
+  margin-right: 10px;
+}
+
+#submit {
+  flex: 1;
+  color: green;
+  font-size: 1.2rem;
+}
+#submit:hover {
+  background-color: green;
+  color: whitesmoke;
+  cursor: pointer;
+}
+#input-text,
+#submit {
+  border-radius: 5px;
+}
+
+.task-container {
+  width: 60%;
+}
+
+.task-list {
+  background-color: whitesmoke;
+  /* list-style-type: none; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px;
+}
+
+.task-list li {
+  display: flex;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 0px 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.check {
+  border: 2px solid green;
+}
+
+.check:hover {
+  box-shadow: 0px 0px 10px green;
+  color: green;
+}
+.del {
+  border: 2px solid red;
+}
+.del:hover {
+  box-shadow: 0px 0px 10px red;
+  color: red;
+}
